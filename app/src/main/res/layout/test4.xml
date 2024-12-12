@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="533dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:text="Borrowing / Returning Books"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/bookIdInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/bookIdInput"
+        android:layout_width="818dp"
+        android:layout_height="108dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="464dp"
+        android:hint="Hinted search text"
+        android:inputType="text"
+        android:padding="30dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="639dp"
+        android:layout_height="96dp"
+        android:hint="Result will appear here"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/borrowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookIdInput" />
+
+    <Button
+        android:id="@+id/borrowButton"
+        android:layout_width="367dp"
+        android:layout_height="138dp"
+        android:enabled="true"
+        android:text="BORROW"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toStartOf="@+id/returnButton"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookIdInput"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="367dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="180dp"
+        android:enabled="true"
+        android:text="RETURN"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookIdInput"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="1718dp"
+        android:layout_height="94dp"
+        android:layout_below="@id/returnButton"
+        android:text="logout"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

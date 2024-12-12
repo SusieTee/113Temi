@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="221dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="56dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_floor_1"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="1F"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_floor_2"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="2F"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_floor_3"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="3F"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_floor_4"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="4F"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_floor_B1"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="B1"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_floor_B2"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:text="B2"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_out"
+            android:layout_width="126dp"
+            android:layout_height="89dp"
+            android:background="@drawable/baseline_keyboard_return_24"
+            android:text="." />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_floor_map"
+        android:layout_width="1038dp"
+        android:layout_height="775dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:contentDescription="Floor Map"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
